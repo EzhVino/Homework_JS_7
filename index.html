@@ -44,7 +44,7 @@
 
         const buttonElem = document.querySelector('.btn');
 
-        function checkClass(elem, userClass) {
+        function editClass(elem, userClass) {
             if (elem.classList.contains(userClass)) {
                 elem.classList.remove(userClass);
             } else {
@@ -52,7 +52,7 @@
             }
         }
 
-        checkClass(buttonElem, 'btn-secondary');
+        editClass(buttonElem, 'btn-secondary');
 
         /*
         3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
