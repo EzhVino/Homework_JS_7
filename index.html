@@ -45,11 +45,8 @@
         const buttonElem = document.querySelector('.btn');
 
         function editClass(elem, userClass) {
-            if (elem.classList.contains(userClass)) {
-                elem.classList.remove(userClass);
-            } else {
-                elem.classList.add(userClass);
-            }
+            elem.classList.contains(userClass) ? elem.classList.remove(userClass) : elem.classList.add(userClass);
+
         }
 
         editClass(buttonElem, 'btn-secondary');
